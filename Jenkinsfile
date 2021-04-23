@@ -34,11 +34,11 @@ spec:
     command:
     - cat
     tty: true
-  - name: java-node
-    image: timbru31/java-node:11-alpine-jre-14
+  - name: java
+    image: gradle:jdk11
     command:
     - cat
-    tty: true
+    tty: true   
     volumeMounts:
     - mountPath: /home/jenkins/dependency-check-data
       name: dependency-check-data
@@ -103,7 +103,7 @@ spec:
     // ***** Stage Sonarqube *****
     stage('Sonarqube Scanner') {
         steps {
-            container('java-node'){
+            container('java'){
                 script {
                     sh "gradle build"
                     // Authentiocation with http://sonarqube.hellodolphin.in.th
