@@ -8,7 +8,7 @@ metadata:
   {{- end }}
   {{- end }}
   name: {{ .Release.Name }}
-  namespace: {{ .Values.details.namespace }}
+  namespace: {{ .Values.reviews.namespace }}
 spec:
   rules:
     - host: {{ .Values.ingress.host }}
