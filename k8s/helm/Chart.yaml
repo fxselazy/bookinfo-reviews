@@ -3,9 +3,9 @@ description: Bookinfo reviews Service Helm Chart
 name: bookinfo-reviews
 version: 1.0.0
 appVersion: 1.0.0
-home: https://bookinfo.dev.opsta.net/student57/reviews
+home: https://bookinfo.dev.opsta.net/student46/reviews
 maintainers:
   - name: student46
     email: devop046@mail.kmutt.ac.th
 sources:
-  - https://github.com/gun082544/bookinfo-reviews
+  - https://github.com/fxselazy/bookinfo-reviews
