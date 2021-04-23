@@ -62,7 +62,7 @@ spec:
               // Helm upgrade with set production tag
               sh "helm upgrade -i -f k8s/helm-values/values-bookinfo-prd-reviews.yaml \
                 --set extraEnv.COMMIT_ID=${scmVars.GIT_COMMIT} \
-                --set ratings.tag=${params.TAG} \
+                --set reviews.tag=${params.TAG} \
                 --namespace fuse-bookinfo-prd fuse-reviews-prd k8s/helm"
             }
           }
