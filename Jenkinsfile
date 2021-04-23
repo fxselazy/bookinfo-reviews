@@ -132,7 +132,7 @@ spec:
     // ***** Stage OWASP *****
     stage('OWASP Dependency Check') {
         steps {
-            container('java-node') {
+            container('java') {
                 script {
                     // Start OWASP Dependency Check
                     dependencyCheck(
