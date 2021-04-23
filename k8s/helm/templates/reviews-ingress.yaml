@@ -18,4 +18,4 @@ spec:
           pathType: Prefix
           backend:
             serviceName: {{ .Release.Name }}
-            servicePort: {{ .Values.details.port }}
+            servicePort: {{ .Values.reviews.port }}
